@@ -14,5 +14,7 @@ This library is not inteded to be published at PyPI.
 If you want to use or try it on your machine:
 1. Install Git on your machine, via https://git-scm.com/downloads.
 2. Clone this repository to your machine. (more on how to do this [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)).
-3. Locate the file 
+3. Locate the file `NumMethPy-0.1.0-py3-none-any.whl` insider `dist`folder.
+4. Run `pip install your-path-to/NumMethPy-0.1.0-py3-none-any.whl` to install library.
+5. Use it on your programs via `import NumMethPy.
 
