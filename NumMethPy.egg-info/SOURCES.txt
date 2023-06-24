@@ -1,0 +1,8 @@
+README.md
+setup.py
+NumMethPy/__init__.py
+NumMethPy/zeros.py
+NumMethPy.egg-info/PKG-INFO
+NumMethPy.egg-info/SOURCES.txt
+NumMethPy.egg-info/dependency_links.txt
+NumMethPy.egg-info/top_level.txt
