@@ -1,6 +1,7 @@
 README.md
 setup.py
 NumMethPy/__init__.py
+NumMethPy/derivative.py
 NumMethPy/zeros.py
 NumMethPy.egg-info/PKG-INFO
 NumMethPy.egg-info/SOURCES.txt
