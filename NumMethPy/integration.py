@@ -1,7 +1,7 @@
 def trapezoidal(f:"function", a:float, b:float, N:int = 1) -> float:
     """Calculates the integral of a function f inside the interval [a,b], 
     using the trapezoidal rule.
-    Use N divisions in the interval, 1 by default.
+    Uses N divisions in the interval, 1 by default.
     
     :param f: function to be integrated
     :param a: lower limit of integration interval
