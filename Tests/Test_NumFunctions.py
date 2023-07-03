@@ -1,4 +1,4 @@
-from NumMethPy import zeros
+from NumMethPy import zeros, integration
 import math
 
 def f1(x):
@@ -12,3 +12,6 @@ print(zeros.fixedPoint(f2, 2, 10))
 def f3(x):
     return x**2 -1
 print(zeros.Newton(f3, 2, 10))
+
+print(integration.Simpson(f3, 0, 3, 10))
+print(integration.trapezoidal(f3, 0, 3, 10))

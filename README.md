@@ -7,7 +7,20 @@ This projetcos consists of a Python library including some of the most common nu
 
 ### Zeros of Functions
 This group of functions in the library implements methods for finding the zero of a function $f$ inside a given interval $[a,b]$.
--  **Bissection Method** - `zeros.bissection`: Takes a function `f`, the limits of the interval `a` and `b`, and optionaly the number of iteration `N` or maximum error `e`. Returns the zero of the function inside the interval, which may be not unique.
+-  **Bissection Method** - `zeros.bissection`: Takes a function `f`, the limits of the interval `a` and `b`, and optionaly the number of iterations `N` or maximum error `e`. Returns the zero of the function inside the interval, which may be not unique.
+- **Fixed Point Method** - `zeros.fixedPoint`: Takes a function `f`, an initial estimative `p0`and optionaly the number of iterations `N`. Returns the fixed point of the function.
+- **Newton's Method** - `zeros.Newton`: Takes a function `f`, an initial estimative `p0`and optionaly the number of iterations `N`. Returns the zero of the function to which Newton's method converge.
+
+### Derivatives
+This group of functions are used to calculate the derivative of a function $f$ at a given point $p$.
+- **Central** - `derivative.central`: Takes a function `f`, a point `p` and optionaly the step size `h`. Returns the derivative at $f(p)$, using the central method with step `h`.
+- **Forward** - `derivative.central`: Takes a function `f`, a point `p` and optionaly the step size `h`. Returns the derivative at $f(p)$, using the forward method with step `h`.
+- **Backward** - `derivative.central`: Takes a function `f`, a point `p` and optionaly the step size `h`. Returns the derivative at $f(p)$, using the backward method with step `h`.
+
+### Integration
+This group of functions are used to calculate the integral of a function $f$ in the interval $[a,b]$.
+- **Trapezoidal rule** - `integration.trapezoidal`: Takes a function `f`, two points `a` and `b`, and a number of divisions `N`in the interval. Returns the numerical value of the integral.
+- **Simpson's rule** - `integration.Simpson`: Takes a function `f`, two points `a` and `b`, and a number of divisions `N`in the interval. Returns the numerical value of the integral.
 
 ## Usage
 This library is not inteded to be published at PyPI.
