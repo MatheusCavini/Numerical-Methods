@@ -30,8 +30,8 @@ This group of functions is used to solve 1st order ODE or systems of 1st order O
 
 
 Example of use:
-
-`#Define the ODEs as functions of t and of 
+```python
+#Define the ODEs as functions of t and of 
 dy1 = lambda t, y: y[1]   #y0'(t) =  y1(t)
 dy2 = lambda t, y: -y[0] - 0.5*y[1] #y1'(t) = -y0(t) - 0.5y1(t)
 
@@ -44,7 +44,7 @@ plt.plot(tempo, solutions[1], linewidth=1)
 plt.xlabel("Time (s)")
 plt.ylabel("y(t)")
 plt.show()
-`
+```
 
 
 
