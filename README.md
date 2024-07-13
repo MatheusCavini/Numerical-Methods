@@ -14,8 +14,8 @@ This group of functions in the library implements methods for finding the zero o
 ### Derivatives
 This group of functions is used to calculate the derivative of a function $f$ at a given point $p$.
 - **Central** - `derivative.central`: Takes a function `f`, a point `p` and optionaly the step size `h`. Returns the derivative at $f(p)$, using the central method with step `h`.
-- **Forward** - `derivative.central`: Takes a function `f`, a point `p` and optionaly the step size `h`. Returns the derivative at $f(p)$, using the forward method with step `h`.
-- **Backward** - `derivative.central`: Takes a function `f`, a point `p` and optionaly the step size `h`. Returns the derivative at $f(p)$, using the backward method with step `h`.
+- **Forward** - `derivative.forward`: Takes a function `f`, a point `p` and optionaly the step size `h`. Returns the derivative at $f(p)$, using the forward method with step `h`.
+- **Backward** - `derivative.backward`: Takes a function `f`, a point `p` and optionaly the step size `h`. Returns the derivative at $f(p)$, using the backward method with step `h`.
 
 ### Integration
 This group of functions is used to calculate the integral of a function $f$ in the interval $[a,b]$.
@@ -24,9 +24,9 @@ This group of functions is used to calculate the integral of a function $f$ in t
 
 ### ODE Solver
 This group of functions is used to solve 1st order ODE or systems of 1st order ODEs, in which the equations $y'_n(t) = f(t, y_1(t), y_2(t), ... )$ are passed in the form of a vector, along with their initial values $y_n(t_0)=y_{n,0}$. The solution is calculated for discrete time steps of size $h$, between $t_0$ and $t_f$.
-- **Euler's method** - `ode.Euler`: takes the list or array which represents the system of ODEs, the lista or array of their initial values, initial time `t0`, end time `tf` and optionally the step size `h`. Returns a tuple containing: 1) Discrete time vector for which solutions are calculated; 2) An array in which each row is the solution for an ODE of the system.
-- **Runge-Kutta of 2nd order** - `ode.RK2`: takes the list or array which represents the system of ODEs, the lista or array of their initial values, initial time `t0`, end time `tf` and optionally the step size `h`. Returns a tuple containing: 1) Discrete time vector for which solutions are calculated; 2) An array in which each row is the solution for an ODE of the system.
-- **Runge-Kutta of 4th order** - `ode.RK4`: takes the list or array which represents the system of ODEs, the lista or array of their initial values, initial time `t0`, end time `tf` and optionally the step size `h`. Returns a tuple containing: 1) Discrete time vector for which solutions are calculated; 2) An array in which each row is the solution for an ODE of the system.
+- **Euler's method** - `ode.Euler`: takes the list or array which represents the system of ODEs, the list or array of their initial values, initial time `t0`, end time `tf` and optionally the step size `h`. Returns a tuple containing: 1) Discrete time vector for which solutions are calculated; 2) An array in which each row is the solution for an ODE of the system.
+- **Runge-Kutta of 2nd order** - `ode.RK2`: takes the list or array which represents the system of ODEs, the list or array of their initial values, initial time `t0`, end time `tf` and optionally the step size `h`. Returns a tuple containing: 1) Discrete time vector for which solutions are calculated; 2) An array in which each row is the solution for an ODE of the system.
+- **Runge-Kutta of 4th order** - `ode.RK4`: takes the list or array which represents the system of ODEs, the list or array of their initial values, initial time `t0`, end time `tf` and optionally the step size `h`. Returns a tuple containing: 1) Discrete time vector for which solutions are calculated; 2) An array in which each row is the solution for an ODE of the system.
 
 
 Example of use:
